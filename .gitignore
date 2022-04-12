@@ -1,9 +1,9 @@
-### Sass ###
+.DS_Store
+
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
 
-
-### General ###
-.DS_Store
+.stylelintrc
+.atom-live-server.json
