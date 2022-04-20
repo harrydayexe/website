@@ -21,6 +21,29 @@ body {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #FF9400;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h1 {
   font-size: 3rem;
   font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -60,6 +83,21 @@ header {
   justify-content: center;
   padding: 0 20px;
   margin-top: 40px;
+}
+
+.heroText {
+  padding: 40px 20px 0;
+}
+.heroText p {
+  padding-top: 5px;
+}
+.heroText .contact p {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .heroText {
+    padding: 40px 0 0;
+  }
 }
 
 .section {
@@ -123,14 +161,6 @@ header {
 .section .section-inner .section-header .section-title {
   padding-left: 20px;
 }
-.section .section-inner .section-header .section-title h3 {
-  font-size: 1.7rem;
-}
-@media (min-width: 768px) {
-  .section .section-inner .section-header .section-title h3 {
-    font-size: 2rem;
-  }
-}
 .section .section-inner .section-header .section-title p {
   color: #7F7F82;
   font-size: 1.1rem;
@@ -138,11 +168,6 @@ header {
 @media (min-width: 768px) {
   .section .section-inner .section-header .section-title p {
     font-size: 1.4rem;
-  }
-}
-@media (min-width: 768px) {
-  .section .section-inner p {
-    font-size: 1.2rem;
   }
 }
 
@@ -185,33 +210,39 @@ header {
     flex-direction: row;
   }
 }
-.section-buttons .button {
+
+.button {
   padding-top: 15px;
   text-align: center;
 }
-.section-buttons .button img,
-.section-buttons .button p {
+.button img,
+.button p {
   width: 150px;
   max-height: 51px;
 }
 @media (min-width: 768px) {
-  .section-buttons .button img,
-.section-buttons .button p {
+  .button img,
+.button p {
     margin-top: 20px;
     width: 200px;
     max-height: 67px;
   }
 }
-.section-buttons .button p {
+.button p {
   background-color: orange;
+  color: white;
   height: 51px;
   line-height: 51px;
 }
 @media (min-width: 768px) {
-  .section-buttons .button p {
+  .button p {
     height: 67px;
     line-height: 67px;
   }
+}
+
+.contact.button {
+  margin: auto;
 }
 
 /*# sourceMappingURL=master.css.map */
