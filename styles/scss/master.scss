@@ -130,3 +130,43 @@ header {
     max-width: 900px;
     margin: auto;
 }
+
+.section-buttons {
+    @include flexbox.flexbox;
+    @include flexbox.flex-direction(column);
+    @include flexbox.justify-content(space-evenly);
+    @include flexbox.align-items(center);
+
+    @include mediaQuery.media-breakpoint-up(md) {
+        @include flexbox.flex-direction();
+    }
+
+    .button {
+        padding-top: 15px;
+        text-align: center;
+
+        img,
+        p {
+            width: 150px;
+            max-height: 51px;
+            @include mediaQuery.media-breakpoint-up(md) {
+                margin-top: 20px;
+                width: 200px;
+                max-height: 67px;
+            }
+        }
+
+        p {
+            // TODO: Make nice button design here
+            background-color: orange;
+
+            height: 51px;
+            line-height: 51px;
+
+            @include mediaQuery.media-breakpoint-up(md) {
+                height: 67px;
+                line-height: 67px;
+            }
+        }
+    }
+}
