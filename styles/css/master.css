@@ -21,17 +21,17 @@ body {
   margin: auto;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  font-size: 3rem;
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-weight: 700;
+}
+h1 span {
   color: #FF9400;
 }
-a:hover {
-  text-decoration: underline;
-}
-
 @media (min-width: 768px) {
-  p {
-    font-size: 1.2rem;
+  h1 {
+    font-size: 4rem;
   }
 }
 
@@ -44,17 +44,26 @@ h2 {
   }
 }
 
-h1 {
-  font-size: 3rem;
-  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  font-weight: 700;
-}
-h1 span {
-  color: #FF9400;
+h3 {
+  font-size: 1.1rem;
 }
 @media (min-width: 768px) {
-  h1 {
-    font-size: 4rem;
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #FF9400;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
   }
 }
 
@@ -243,6 +252,41 @@ header {
 
 .contact.button {
   margin: auto;
+}
+
+footer {
+  margin: 50px, 0;
+  text-align: center;
+  clear: both;
+}
+footer a {
+  color: #A9A9A9;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  footer a {
+    display: block;
+    line-height: 2;
+  }
+}
+@media (min-width: 576px) {
+  footer a:not(:last-of-type) {
+    margin-right: 6%;
+  }
+}
+footer h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
+}
+footer h5 {
+  font-variant-position: 0.75rem;
+  color: #7F7F82;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=master.css.map */

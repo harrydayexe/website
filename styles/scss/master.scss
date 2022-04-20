@@ -29,28 +29,6 @@ body {
     margin: auto;
 }
 
-a {
-    text-decoration: none;
-    color: colours.$mainAccent;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-p {
-    @include mediaQuery.media-breakpoint-up(md) {
-        font-size: 1.2rem;
-    }
-}
-
-h2 {
-    font-size: 1.7rem;
-    @include mediaQuery.media-breakpoint-up(md) {
-        font-size: 2rem;
-    }
-}
-
 // Title Size
 h1 {
     font-size: 3rem;
@@ -63,6 +41,35 @@ h1 {
 
     @include mediaQuery.media-breakpoint-up(md) {
         font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1.7rem;
+    @include mediaQuery.media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 1.1rem;
+    @include mediaQuery.media-breakpoint-up(md) {
+        font-size: 1.4rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: colours.$mainAccent;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {
+    @include mediaQuery.media-breakpoint-up(md) {
+        font-size: 1.2rem;
     }
 }
 
@@ -203,4 +210,44 @@ header {
 
 .contact.button {
     margin: auto;
+}
+
+footer {
+    margin: 50px, 0;
+    text-align: center;
+    clear: both;
+
+    a {
+        color: colours.$linkTextColor;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        // Mobile Styling
+        @include mediaQuery.media-breakpoint-down(sm) {
+            display: block;
+            line-height: 2;
+        }
+        // Override Styling
+        @include mediaQuery.media-breakpoint-up(sm) {
+            // Apply a right margin to all but the last link
+            &:not(:last-of-type) {
+                margin-right: 6%;
+            }
+        };
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    h5 {
+        font-variant-position: 0.75rem;
+        color: colours.$lightGrey;
+        line-height: 2;
+    }
 }
