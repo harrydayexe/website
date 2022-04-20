@@ -87,12 +87,14 @@ header {
 
     p {
         padding-top: 5px;
+        text-align: justify;
     }
 
     .contact {
         // TODO: Center this button
         p {
             padding: 0;
+            text-align: center;
         }
     }
 

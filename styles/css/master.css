@@ -99,9 +99,11 @@ header {
 }
 .heroText p {
   padding-top: 5px;
+  text-align: justify;
 }
 .heroText .contact p {
   padding: 0;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .heroText {
