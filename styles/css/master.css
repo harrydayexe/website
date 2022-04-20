@@ -53,6 +53,12 @@ h3 {
   }
 }
 
+h4 {
+  font-weight: 500;
+  color: #7F7F82;
+  padding-bottom: 5px;
+}
+
 a {
   text-decoration: none;
   color: #FF9400;
@@ -114,10 +120,10 @@ header {
 .section {
   padding: 40px 20px;
 }
-.section:nth-child(even) {
+.section:nth-child(odd) {
   background: #F9F9F9;
 }
-.section:nth-child(even) .section-info {
+.section:nth-child(odd) .section-info {
   order: 2;
 }
 .section .section-inner {

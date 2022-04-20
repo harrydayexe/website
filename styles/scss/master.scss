@@ -58,6 +58,12 @@ h3 {
     }
 }
 
+h4 {
+    font-weight: 500;
+    color: colours.$lightGrey;
+    padding-bottom: 5px;
+}
+
 a {
     text-decoration: none;
     color: colours.$mainAccent;
@@ -106,7 +112,7 @@ header {
 .section {
     padding: 40px 20px;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
         background: colours.$altBackground;
 
         .section-info {
@@ -212,6 +218,12 @@ header {
 
 .contact.button {
     margin: auto;
+}
+
+.education {
+    table {
+        // TODO: Table Styling for education section
+    }
 }
 
 footer {
