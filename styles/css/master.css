@@ -63,9 +63,6 @@ a {
   text-decoration: none;
   color: #FF9400;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 @media (min-width: 768px) {
   p {
@@ -101,7 +98,7 @@ header {
 }
 
 .heroText {
-  padding: 40px 20px 0;
+  padding: 40px 20px 10px;
 }
 .heroText p {
   padding-top: 5px;
@@ -113,7 +110,7 @@ header {
 }
 @media (min-width: 768px) {
   .heroText {
-    padding: 40px 0 0;
+    padding: 40px 0 20px;
   }
 }
 
@@ -229,7 +226,7 @@ header {
 }
 
 .button {
-  padding-top: 15px;
+  margin-top: 15px;
   text-align: center;
 }
 .button img,
@@ -240,16 +237,14 @@ header {
 @media (min-width: 768px) {
   .button img,
 .button p {
-    margin-top: 20px;
     width: 200px;
     max-height: 67px;
   }
 }
 .button p {
-  background-color: orange;
-  color: white;
   height: 51px;
   line-height: 51px;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .button p {
@@ -258,8 +253,18 @@ header {
   }
 }
 
-.contact.button {
-  margin: auto;
+.button.styled {
+  border: 5px solid #FF9400;
+  border-radius: 25px;
+}
+.button.styled p:hover {
+  color: #FFF;
+  transition: all 0.2s;
+}
+.button.styled:hover {
+  background-color: #FF9400;
+  transition: all 0.2s;
+  color: #FFF;
 }
 
 footer {

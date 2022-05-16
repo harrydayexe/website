@@ -67,10 +67,6 @@ h4 {
 a {
     text-decoration: none;
     color: colours.$mainAccent;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 p {
@@ -89,7 +85,7 @@ header {
 }
 
 .heroText {
-    padding: 40px 20px 0;
+    padding: 40px 20px 10px;
 
     p {
         padding-top: 5px;
@@ -105,7 +101,7 @@ header {
     }
 
     @include mediaQuery.media-breakpoint-up(md) {
-        padding: 40px 0 0;
+        padding: 40px 0 20px;
     }
 }
 
@@ -187,7 +183,7 @@ header {
 }
 
 .button {
-    padding-top: 15px;
+    margin-top: 15px;
     text-align: center;
 
     img,
@@ -195,19 +191,16 @@ header {
         width: 150px;
         max-height: 51px;
         @include mediaQuery.media-breakpoint-up(md) {
-            margin-top: 20px;
+            // margin-top: 20px;
             width: 200px;
             max-height: 67px;
         }
     }
 
     p {
-        // TODO: Make nice button design here
-        background-color: orange;
-        color: white;
-
         height: 51px;
         line-height: 51px;
+        font-weight: bold;
 
         @include mediaQuery.media-breakpoint-up(md) {
             height: 67px;
@@ -216,8 +209,22 @@ header {
     }
 }
 
-.contact.button {
-    margin: auto;
+.button.styled {
+    border: 5px solid colours.$mainAccent;
+    border-radius: 25px;
+
+    p {
+        &:hover {
+            color: colours.$backgroundColor;
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover {
+        background-color: colours.$mainAccent;
+        transition: all 0.2s;
+        color: colours.$backgroundColor;
+    }
 }
 
 .education {
