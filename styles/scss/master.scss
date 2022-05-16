@@ -52,10 +52,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1rem;
-    @include mediaQuery.media-breakpoint-up(md) {
-        font-size: 1.4rem;
-    }
+    font-size: 2rem;
+    margin-bottom: 0.5em;
 }
 
 h4 {
@@ -82,6 +80,34 @@ header {
     @include flexbox.justify-content(center);
     padding: 0 20px;
     margin-top: 40px;
+
+    .header-info {
+        padding-left: 2.5%;
+    }
+
+    p {
+        color: colours.$lightGrey;
+        font-size: 1rem;
+    }
+
+    // App Icon Style
+    .header-icon {
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        // Mobile
+        width: 100px;
+        height: 100px;
+        // Override
+        @include mediaQuery.media-breakpoint-up(md) {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
 
 .heroText {
@@ -227,14 +253,49 @@ header {
     }
 }
 
-.education {
-    table {
-        // TODO: Table Styling for education section
+.education-container {
+    @include mediaQuery.media-breakpoint-down(sm) {
+        width: 90%;
+    }
+}
+
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    border-left: 2px solid colours.$darkGrey;
+
+    &::before {
+        content: attr(date-is);
+        position: absolute;
+        left: 2em;
+        font-weight: bold;
+        top: 1em;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 0.785rem;
+    }
+
+    &::after {
+        width: 10px;
+        height: 10px;
+        display: block;
+        top: 1em;
+        position: absolute;
+        left: -7px;
+        border-radius: 10px;
+        content: '';
+        border: 2px solid colours.$darkGrey;
+        background: white;
+    }
+
+    &:last-child {
+        border-image: linear-gradient(to bottom, colours.$darkGrey 60%, rgba(colours.$darkGrey, 0)) 1 100%;
     }
 }
 
 footer {
-    margin: 50px, 0;
+    margin-top: 50px;
     text-align: center;
     clear: both;
 
