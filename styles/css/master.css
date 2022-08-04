@@ -339,7 +339,9 @@ footer a:hover {
 @media (max-width: 576px) {
   footer a {
     display: block;
-    line-height: 2;
+    line-height: 3;
+    min-width: 48px;
+    min-height: 48px;
   }
 }
 @media (min-width: 576px) {

@@ -310,7 +310,9 @@ footer {
         // Mobile Styling
         @include mediaQuery.media-breakpoint-down(sm) {
             display: block;
-            line-height: 2;
+            line-height: 3;
+            min-width: 48px;
+            min-height: 48px;
         }
         // Override Styling
         @include mediaQuery.media-breakpoint-up(sm) {
