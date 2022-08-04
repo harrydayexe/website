@@ -132,8 +132,6 @@ header {
 }
 
 .section {
-    padding: 40px 20px;
-
     &:nth-child(odd) {
         background: colours.$altBackground;
 
@@ -194,6 +192,7 @@ header {
     // Cap width of content
     max-width: 900px;
     margin: auto;
+    padding: 40px 20px;
 }
 
 .section-buttons {

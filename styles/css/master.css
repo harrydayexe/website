@@ -132,9 +132,6 @@ header .header-icon img {
   }
 }
 
-.section {
-  padding: 40px 20px;
-}
 .section:nth-child(odd) {
   background: #F9F9F9;
 }
@@ -206,6 +203,7 @@ header .header-icon img {
 .wrapper {
   max-width: 900px;
   margin: auto;
+  padding: 40px 20px;
 }
 
 .section-buttons {
