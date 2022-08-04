@@ -254,7 +254,7 @@ header {
 }
 
 .education-container {
-    @include mediaQuery.media-breakpoint-down(sm) {
+    @include mediaQuery.media-breakpoint-down(lg) {
         width: 90%;
     }
 }
